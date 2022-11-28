@@ -337,6 +337,9 @@ body {
   gap: 30px;
 }
 .clients_item {
+}
+
+.clients_item_link {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -347,11 +350,8 @@ body {
   align-items: center;
   justify-content: center;
 }
-.clients_item:hover {
-  border: 1px solid var(--color-accent);
-  color: var(--color-accent);
-}
-.clients_item:focus {
+.clients_item_link:hover,
+.clients_item_link:focus {
   border: 1px solid var(--color-accent);
   color: var(--color-accent);
 }
