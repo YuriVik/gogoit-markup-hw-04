@@ -50,7 +50,6 @@ a {
 /* content  */
 
 body {
-  background-color: #f5f5f5;
   font-family: "Roboto";
 }
 .conteiner {
@@ -146,6 +145,7 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -219,7 +219,7 @@ body {
 .details_text {
   font-weight: 400;
   font-size: 14px;
-  line-height: clac(24 / 16);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--color-simple-text);
 }
@@ -268,7 +268,9 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .command_item_img {
-  margin-bottom: 30px;
+}
+.command_box-person {
+  padding: 30px 0;
 }
 .command_item_title {
   text-align: center;
@@ -297,8 +299,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  margin-bottom: 30px;
 }
 
 .command_item_list-social_item_link {
@@ -347,7 +347,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-.clients_item:hover,
+.clients_item:hover {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
 .clients_item:focus {
   border: 1px solid var(--color-accent);
   color: var(--color-accent);
@@ -386,11 +389,11 @@ body {
 .conteiner-footer {
   display: flex;
   gap: 70px;
+  align-items: baseline;
 }
 .footer-messengers {
 }
-.footer-messengers_title {
-  margin-top: 12px;
+.footer-messengers_text {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -429,7 +432,6 @@ body {
 
 /* ----------------PORTFOLIO-------- */
 .main-portfolio {
-  background: #f5f5f5;
 }
 .body-portfolio {
 }
@@ -442,6 +444,7 @@ body {
   gap: 30px;
 }
 .portfolio-btns_btn {
+  cursor: pointer;
   padding: 6px 22px;
   border: none;
   background-color: #f5f4fa;
@@ -473,16 +476,21 @@ body {
 }
 .cards-list_item {
   flex-basis: calc(100% - 20px) / 3;
-
-  outline: 1px solid #eeeeee;
-  padding-bottom: 20px;
 }
-.cards-list_item:hover {
+
+.cards_item_link {
+  display: block;
+  outline: 1px solid #eeeeee;
+}
+.cards_item_link:hover,
+.cards_item_link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .cards-_item_img {
-  margin-bottom: 20px;
+}
+.cards_item_box-text {
+  padding: 20px 0;
 }
 .cards-_item_title {
   margin-left: 24px;
